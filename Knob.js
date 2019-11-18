@@ -328,7 +328,7 @@ class Knob extends React.Component {
         />
       );
     } else if (displayCustom && typeof displayCustom === 'function') {
-      return displayCustom();
+      return displayCustom(this);
     }
     return null;
   };
